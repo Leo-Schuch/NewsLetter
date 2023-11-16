@@ -10,14 +10,18 @@
 
 @layer components{
     .newsletter-input {
-        @apply outline-none py-1 px-5 w-full max-w-md dark:bg-dark-200 text-dark-200 dark:text-gray-200 rounded-full placeholder:text-gray-400 placeholder:dark:text-gray-600 placeholder:text-xs placeholder:uppercase placeholder:font-bold focus:border-2 focus:border-newsletter-200 focus:dark:border-newsletter-100 focus:invalid:border-2 focus:invalid:border-red-600 focus:invalid:dark:border-red-600;
+        @apply outline-none py-1 px-5 w-full max-w-md dark:bg-dark-200 text-dark-200 dark:text-gray-200 rounded-full placeholder:text-gray-400 placeholder:dark:text-gray-600 placeholder:text-xs placeholder:uppercase placeholder:font-bold focus:border-2 focus:border-newsletter-200 focus:dark:border-newsletter-100 focus:invalid:border-2 focus:invalid:border-red-600 focus:invalid:dark:border-red-600 caret-newsletter-200 dark:caret-newsletter-100;
     }
 
     .newsletter-button{
-        @apply outline-none w-full max-w-sm bg-newsletter-100 dark:bg-dark-200 rounded-full px-4 py-2 text-gray-200 uppercase hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black
+        @apply outline-none w-full max-w-sm bg-newsletter-100 dark:bg-dark-200 rounded-full px-4 py-2 text-gray-200 uppercase hover:animate-pulse hover:shadow-md hover:shadow-gray-500 hover:dark:shadow-black hover:-translate-y-1 hover:delay-150;
     }
 
     .newsletter-card{
         @apply p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl sm:shadow-lg flex flex-col gap-4 items-center sm:hover:shadow-gray-500 sm:hover:dark:shadow-black
+    }
+
+    .newsletter-tag{
+       @apply bg-newsletter-100 dark:bg-dark-100 px-4 py-2 rounded-full text-gray-200 font-bold text-xs uppercase hover:bg-gradient-to-r hover:dark:from-newsletter-100 hover:dark:to-newsletter-200 cursor-pointer hover:from-newsletter-200 hover:to-newsletter-100;
     }
 }
