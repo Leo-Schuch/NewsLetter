@@ -1,6 +1,6 @@
 const Article = ({title, text, tags, image, alt}) => {
   return (
-    <div className="p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl sm:shadow-lg flex flex-col gap-4 items-center sm:hover:shadow-gray-500 sm:hover:dark:shadow-black">
+    <div className="newsletter-card">
         <h3 className="text-xl text-newsletter-200 dark:text-gray-200 font-bold"> {title} </h3>
         <div className="w-full flex-row justify-end gap-2 pr-5 hidden sm:flex ">
           {
